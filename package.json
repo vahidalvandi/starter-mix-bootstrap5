@@ -1,0 +1,26 @@
+{
+    "private": true,
+    "scripts": {
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix && mix watch --hot",
+        "production": "mix --production",
+        "hot1": "npm run development && NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "@popperjs/core": "^2.9.2",
+        "axios": "^0.21",
+        "bootstrap": "^5.1.*",
+        "ejs": "^2.6.1",
+        "ejs-compiled-loader": "^1.1.0",
+        "html-webpack-plugin": "^5.3.2",
+        "jquery": "^3.6",
+        "laravel-mix": "^6.0",
+        "lodash": "^4.17.21",
+        "postcss": "^8.1.14",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.35.2",
+        "sass-loader": "^12.1.0"
+    }
+}

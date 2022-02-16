@@ -1,0 +1,20 @@
+
+@import "~bootstrap/scss/functions";
+@import "_variables";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+@import "~bootstrap/scss/mixins/buttons";
+@import "~bootstrap/scss/mixins/gradients";
+@import "~bootstrap/scss/mixins/box-shadow";
+@import "_bootstrap"; //use in override button mixins
+
+/*
+end bootstrap load
+*/
+
+@import "./style/common.scss";
+@import "./style/index.scss";
+@import "./style/category.scss";
+@import "./style/header.scss";
+@import "./style/footer.scss";
+@import "./style/page.scss"
