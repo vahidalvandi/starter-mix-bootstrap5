@@ -34,8 +34,8 @@ mix.webpackConfig({
             inject: false
         }),
         new HtmlWebpackPlugin({
-            template: "ejs-compiled-loader!./src/about-us.ejs",
-            filename: "about-us.html",
+            template: "ejs-compiled-loader!./src/page.ejs",
+            filename: "page.html",
             inject: false
         }),
     ],
