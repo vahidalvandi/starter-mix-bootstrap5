@@ -12,7 +12,7 @@ other functionality and document should work as laravel-mix documentation.
     npm run hot
 
 ## Generate production build
-    npm run prod
+    npm run production
 
 ## Add New Html File
 
