@@ -1,4 +1,4 @@
-# Bootstrap 5 RTL , LTR webpack based on laravel mix npm package Starter 
+# Bootstrap 5.2 RTL , LTR webpack based on laravel mix npm package Starter 
 
 ## Introduction
 This demo is based on laravel-mix starter kit and its using ejs-compiled-loader to compile ejs files.

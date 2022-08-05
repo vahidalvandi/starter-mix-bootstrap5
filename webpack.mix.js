@@ -12,13 +12,13 @@ mix.setPublicPath("dist");
  |
  */
 
-mix.js("src/js/app.js", "dist/js");
+mix.js("src/asset/js/app.js", "dist/js");
 
 mix.sass("src/sass/style.scss", "dist/css");
 
-mix.copyDirectory("src/vendor/", "dist/vendor");
+mix.copyDirectory("src/asset/", "dist/");
 
-mix.copyDirectory("src/images", "dist/images");
+mix.copyDirectory("node_modules/bootstrap/dist", "dist/bootstrap");
 
 mix.disableNotifications();
 

@@ -1,15 +1,79 @@
 @font-face {
-    font-family: 'yekan';
-    font-style: normal;
-    font-weight: bold;
-    src: url('../fonts/iranyekanweblightfanum.eot');
-    src: url('../fonts/iranyekanweblightfanum.eot#iefix') format('embedded-opentype'),  /* IE6-8 */
-    url('../fonts/iranyekanweblightfanum.woff') format('woff'),  /* FfF3.6+, IE9, Chrome6+, Saf5.1+*/
-    url('../fonts/iranyekanweblightfanum.ttf') format('truetype');
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-UI-FD-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-UI-FD-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-UI-FD-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-UI-FD-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-UI-FD-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-UI-FD-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-UI-FD-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-UI-FD-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-UI-FD-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 body {
-    font-family: 'yekan' !important;
+    font-family: 'vazir' !important;
 }
 
 // sticky footer
