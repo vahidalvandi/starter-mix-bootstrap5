@@ -1,19 +1,43 @@
+
 $theme-colors: (
-        "primary": $primary,
-        "secondary": $secondary,
-        "success": $success,
-        "info": $info,
-        "warning": $warning,
-        "danger": $danger,
-        "light": $light,
-        "dark": $dark
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": #f3f3f3,
+    "dark": #303841,
+    "click": $click
 );
+
 
 @each $color, $value in $theme-colors {
 
-  .btn-#{$color} {
-    @include button-variant($value, darken($value, 7.5%), lighten($value, 90%), lighten($value, 5%), lighten($value, 10%), lighten($value, 70%));
-  }
+
+    .btn-#{$color} {
+        @if $color == "light" {
+            @include button-variant(
+                    $value,
+                    $value,
+                $hover-background: shade-color($value, $btn-hover-bg-shade-amount),
+                $hover-border: shade-color($value, $btn-hover-border-shade-amount),
+                $active-background: shade-color($value, $btn-active-bg-shade-amount),
+                $active-border: shade-color($value, $btn-active-border-shade-amount)
+            );
+        } @else if $color == "dark" {
+            @include button-variant(
+                    $value,
+                    $value,
+                $hover-background: tint-color($value, $btn-hover-bg-tint-amount),
+                $hover-border: tint-color($value, $btn-hover-border-tint-amount),
+                $active-background: tint-color($value, $btn-active-bg-tint-amount),
+                $active-border: tint-color($value, $btn-active-border-tint-amount)
+            );
+        } @else {
+            @include button-variant($value,  darken($value, 7.5%), lighten($value, 90%), lighten($value, 5%), lighten($value, 10%), lighten($value, 80%));
+        }
+    }
 
   .text-#{$color} {
     color: $value !important;
@@ -30,8 +54,24 @@ $theme-colors: (
   .link-#{$color} {
     color: $value !important;
   }
-
+  .border-#{$color} {
+    border-color: $value !important;
+  }
 
 }
 
+.nav-link {
+    color: $primary;
+}
 
+.nav-link:hover {
+    color: lighten($primary, 10%);
+}
+
+a {
+    color: $primary;
+}
+
+a:hover {
+    color: lighten($primary, 10%);
+}
