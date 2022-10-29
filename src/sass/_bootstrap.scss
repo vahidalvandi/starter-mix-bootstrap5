@@ -1,4 +1,3 @@
-
 $theme-colors: (
     "primary": $primary,
     "secondary": $secondary,
@@ -34,28 +33,33 @@ $theme-colors: (
                 $active-border: tint-color($value, $btn-active-border-tint-amount)
             );
         } @else {
-            @include button-variant($value,  darken($value, 7.5%), lighten($value, 90%), lighten($value, 5%), lighten($value, 10%), lighten($value, 80%));
+            @include button-variant($value, $value);
         }
     }
 
-  .text-#{$color} {
-    color: $value !important;
-  }
 
-  .bg-#{$color} {
-    background-color: $value !important;
-  }
+    .btn-outline-#{$color} {
+        @include button-outline-variant($value);
+    }
 
-  .table-#{$color} {
-    background-color: $value !important;
-  }
+    .text-#{$color} {
+        color: $value !important;
+    }
 
-  .link-#{$color} {
-    color: $value !important;
-  }
-  .border-#{$color} {
-    border-color: $value !important;
-  }
+    .bg-#{$color} {
+        background-color: $value !important;
+    }
+
+    .table-#{$color} {
+        background-color: $value !important;
+    }
+
+    .link-#{$color} {
+        color: $value !important;
+    }
+    .border-#{$color} {
+        border-color: $value !important;
+    }
 
 }
 
