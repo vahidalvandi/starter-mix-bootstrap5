@@ -6,7 +6,7 @@
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix && mix watch --hot",
         "production": "mix --production",
-        "hot1": "npm run development && NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js"
+        "hot-host": "mix && mix watch --hot -- --host 192.168.1.111"
     },
     "devDependencies": {
         "bootstrap": "^5.2.0",
