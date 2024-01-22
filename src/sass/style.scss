@@ -9,6 +9,10 @@
 @import "~bootstrap/scss/mixins/box-shadow";
 @import "_bootstrap"; //use in override button mixins
 
+//override container size
+@import "~bootstrap/scss/mixins/_container";
+@import "~bootstrap/scss/_containers";
+
 /*
 end bootstrap load
 */
